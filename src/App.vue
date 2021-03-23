@@ -1,14 +1,23 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+
     <router-view />
   </div>
 </template>
 
 <style lang="scss">
+
+* {
+  padding:0; 
+  margin: 0; 
+  box-sizing: border-box;
+}
+
+body {
+ background: rgb(250,197,162);
+background: linear-gradient(164deg, rgba(250,197,162,1) 0%, rgba(250,172,120,1) 21%, rgba(250,163,106,1) 79%);
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
