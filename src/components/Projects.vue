@@ -2,7 +2,7 @@
   <div class="section4">
 
 
-<div class="project" data-aos="zoom-in" data-aos-duration="1000">
+<div class="project" data-aos="zoom-in" data-aos-duration="1000" @click="gitGo1">
 <h2>Actioneo</h2>
 <h3>(VueJs)</h3>
 <p>Project in team realized for the lawyer's company. <br>
@@ -10,7 +10,7 @@
 </p>
     </div>
 
- <div class="project" data-aos="zoom-in" data-aos-duration="1000">
+ <div class="project" data-aos="zoom-in" data-aos-duration="1000" @click="gitGo2">
 <h2>Fruit API</h2>
 <h3>(VueJs)</h3>
 <p>SPA with the connection of API endpoints.
@@ -19,7 +19,7 @@
 </p>
     </div>
 
-    <div class="project" data-aos="zoom-in" data-aos-duration="1000">
+    <div class="project" data-aos="zoom-in" data-aos-duration="1000" @click="gitGo3">
 <h2>Pers. website</h2>
 <h3>(HTML,CSS,JS)</h3>
 <p>First personal portfolio website.
@@ -38,6 +38,19 @@ data() {
     return {
         modalShow: false,
     }
+}, 
+methods: {
+  gitGo1() {
+    window.location.href = 'https://github.com/Nikoletta31';
+  }, 
+    gitGo2() {
+    window.location.href = 'https://github.com/Nikoletta31/API-VueJs';
+  }, 
+    gitGo3() {
+    window.location.href = 'https://github.com/Nikoletta31/nikakharebava';
+  },
+
+
 }
 };
 </script>
