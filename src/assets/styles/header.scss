@@ -41,7 +41,7 @@
         margin:0;
         width:330px;
         height: 300px;
-        padding:50px 0 0 50px;
+        padding:40px 0 0 40px;
     }
     @include mobile-small {
         margin:0;
@@ -59,22 +59,24 @@
 
 
     h1 {
+       
         font-size: 100px;
         @include mobile {
             font-size: 50px;
         }
         @include mobile-small {
-            font-size: 50px;
+            font-size: 45px;
         }
     
     }
     h2 {
-        font-size: 100px;
+        margin-bottom: 20px;
+        font-size: 90px;
         @include mobile {
             font-size: 50px;
         }
         @include mobile-small {
-            font-size: 50px;
+            font-size: 45px;
         }
      
         span {
@@ -84,11 +86,12 @@
     }
     h3 {
         font-size: 50px;
+     
         @include mobile {
             font-size: 25px;
         }
         @include mobile-small {
-            font-size: 25px;
+            font-size: 20px;
         }
       
     }
@@ -116,7 +119,7 @@
     border-radius: 50px;
     margin-top:30px;
     text-align: left;
-    padding:50px 30px 0 30px;
+    padding:50px 40px 20px 40px;
 }
 @include tablet {
        width:600px; 
@@ -192,10 +195,18 @@ p {
     
         &:hover{
             cursor: pointer;
+            transition-duration: 0.1s;
            border: 3px solid rgb(236, 108, 33);
+        }
+        &:visited{
+            border:none;
+        }
+        &:active{
+            border:none;
         }
     i {
         color: rgb(65, 65, 65);
+        transition-duration: 0.1s;
         &:hover {
             color: rgb(236, 108, 33);
             cursor: pointer;

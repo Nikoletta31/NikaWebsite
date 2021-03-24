@@ -19,7 +19,7 @@ background: linear-gradient(164deg, rgba(250,197,162,1) 0%, rgba(250,172,120,1) 
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
