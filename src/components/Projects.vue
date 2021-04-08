@@ -3,7 +3,7 @@
 
 
 
-<div class="project" data-aos="zoom-in" data-aos-duration="1000" @click="gitGo1">
+<div class="project" data-aos="zoom-in" data-aos-duration="1000" >
 
 <div class="project-text-box">
 <h2 class="project-text">Actioneo VueJs</h2>
@@ -13,7 +13,7 @@
 
 
 
-<div class="project2" data-aos="zoom-in" data-aos-duration="1000" @click="gitGo3">
+<div class="project2" data-aos="zoom-in" data-aos-duration="1000" >
  
 <div class="project-text-box">
 <h2 class="project-text">Weather App API VueJs</h2>
@@ -22,10 +22,10 @@
 
 
     </div>
- <div class="project3" data-aos="zoom-in" data-aos-duration="1000" @click="gitGo2">
+ <div class="project3" data-aos="zoom-in" data-aos-duration="1000" >
 <div class="project-text-box">
 <h2 class="project-text">Fruits API VueJs</h2>
-<button>Learn more</button>
+<button @click="gitGo2">Learn more</button>
 </div>
     </div>
   </div>

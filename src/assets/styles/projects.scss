@@ -88,11 +88,31 @@ border-radius: 25px;
 
 opacity: 0;
 transition: opacity .3s;
-&:hover{
+@include mobile-small{
+    border-radius:30px;
+}
+@include mobile{
+    border-radius:30px;
+}
+&:hover {
     opacity:0.9;
+}
+&:active {
+    opacity:0.9;
+}
+&:visited {
+    opacity:0;
 }
 .project-text{
     padding-top:100px;
+    @include mobile-small{
+        padding-top:50px;
+        font-size:20px;
+    }
+    @include mobile{
+        padding-top:50px;
+        font-size:20px;
+    }
   
 }
 }
