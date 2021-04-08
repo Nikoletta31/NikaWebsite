@@ -1,0 +1,87 @@
+@import "@/assets/styles/media.scss"; 
+
+.section6 {
+  margin-top:50px;
+   display:flex; 
+   justify-content: center;
+
+   
+    @include mobile {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+   
+    }
+    @include mobile-small {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+   
+   
+  
+}
+
+.white {
+    background-color: rgb(65, 65, 65);
+    
+ 
+    padding: 80px 80px 80px 80px;
+    box-shadow: 5px 10px 25px #f17f49;
+    border-radius: 50px;
+    margin:20px 60px 50px 60px;
+   
+   
+    @include mobile {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       margin:50px 0;
+        width:330px;
+    }
+    @include mobile-small {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       margin:50px 0;
+        width:295px;
+        padding:60px 30px 0px 30px;
+    }
+}
+
+h2 {
+  
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    @include mobile-small {
+        font-size: 30px;
+    }
+    @include mobile {
+        font-size: 30px;
+    }
+
+}
+
+p{
+    padding-top:15px;
+    color:white;
+    font-size:20px;
+}
+
+
+
+
+.skill {
+    padding: 20px;
+    @include tablet {
+            padding:10px;
+    }
+}

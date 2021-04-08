@@ -7,6 +7,7 @@
 
 <div class="project-text-box">
 <h2 class="project-text">Actioneo VueJs</h2>
+<button>Learn more</button>
 </div>
     </div>
 
@@ -16,6 +17,7 @@
  
 <div class="project-text-box">
 <h2 class="project-text">Weather App API VueJs</h2>
+<button>Learn more</button>
 </div>
 
 
@@ -23,6 +25,7 @@
  <div class="project3" data-aos="zoom-in" data-aos-duration="1000" @click="gitGo2">
 <div class="project-text-box">
 <h2 class="project-text">Fruits API VueJs</h2>
+<button>Learn more</button>
 </div>
     </div>
   </div>

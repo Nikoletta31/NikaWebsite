@@ -4,6 +4,7 @@
   <AboutMe/>
     <Next />
     <Skills/>
+
   <Projects/>
   <Other/>
   </div>
@@ -18,6 +19,7 @@ import Projects from "@/components/Projects.vue";
 import Skills from "@/components/Skills.vue";
 import Other from "@/components/Other.vue";
 
+
 export default {
   name: "Home",
   components: {
@@ -25,7 +27,8 @@ export default {
     Next, 
     Projects,
     Skills, 
-    Other
+    Other, 
+
   }
 };
 </script>
