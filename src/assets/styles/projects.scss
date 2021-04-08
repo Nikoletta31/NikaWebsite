@@ -1,9 +1,51 @@
 @import "@/assets/styles/media.scss";
 
+@mixin project {
+    height: 300px; 
+    color:white;
+    border-radius: 30px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    box-shadow: 5px 10px 25px #f17f49;
+    padding:10px 10px;
+    border:3px solid white;
+    width:500px;
+    margin:50px 110px 80px 110px;
+    position:relative;
+       &:hover{
+        box-shadow: 5px 10px 25px #d65215;
+        cursor: pointer;
+       
+    }
+    @include mobile {
+        margin:20px 0;
+        width:330px;
+        height:200px;
+        border-radius: 40px;
+    }
+    @include mobile-small {
+        margin:20px 0;
+        width:295px;
+        height:200px;
+        border-radius: 40px;
+        
+    }
+    @include tablet {
+        margin:10px 0; 
+        width:600px;
+        height:250px;
+       
+     
+     
+    }
+}
+
 .section4 {
     display: flex; 
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     @include mobile {
         flex-direction: column;
         justify-content: center;
@@ -20,44 +62,75 @@
     }
 }
 
+.project2 {
+    background-image: url(~@/assets/weather.png);
+    @include project; 
+}
+
 .project{
-    color:white;
-    border-radius: 50px;
-   background-color: rgb(61, 61, 61);
-    box-shadow: 5px 10px 25px #f17f49;
-    padding:40px 40px;
-    height:300px;
-    width:300px;
-    margin:50px 80px 80px 80px;
+   background-image: url(~@/assets/actio.png);
+   @include project; 
+}
+
+.project3{
+    background-image: url(~@/assets/fruits.png);
+    @include project; 
+ }
+
+.project-text-box{
+position:absolute;
+background-color:rgb(61, 61, 61);
+width:100%;
+height:100%;
+top:0;
+left:0;
+border-radius: 25px;
+
+opacity: 0;
+transition: opacity .3s;
+&:hover{
+    opacity:0.9;
+}
+.project-text{
+    padding-top:100px;
+}
+}
+
+/*img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    border-radius: 20px;
+    width:480px;
+    height:auto;
+    position:relative;
+    &:hover{
+        filter: none;
+    -webkit-filter: grayscale(0);
+    }
+    
+   
     @include mobile {
-        margin:20px 0;
-        width:330px;
-        
+        width:200px;
+        border: 4px solid white;
+        margin:0;
     }
     @include mobile-small {
-        margin:20px 0;
-        width:295px;
-        
+        width:200px;
+        border: 4px solid white;
+        margin:0;
     }
-    @include tablet {
-        margin:10px 0; 
-        width:600px;
-        height:250px;
-       
-        h2 {
-            font-size: 30px;
-        }
-        h3{
-            font-size:20px;
-        }
-    }
- 
 
-    &:hover {
-        cursor: pointer;
-    }
-    p{
-        padding-top:10px;
-        text-align: left;
-    }
 }
+
+
+
+.project-text{
+    position:absolute;
+    top:100px;
+    left:120px;
+text-align: center;
+
+color: #fff;
+
+
+} */
