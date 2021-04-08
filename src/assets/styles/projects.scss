@@ -103,6 +103,9 @@ transition: opacity .3s;
 &:visited {
     opacity:0;
 }
+&:focus {
+    opacity:0.9;
+}
 .project-text{
     padding-top:100px;
     @include mobile-small{
