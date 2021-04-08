@@ -3,9 +3,9 @@
 
 
 
-<div class="project" data-aos="zoom-in" data-aos-duration="1000" >
+<div class="project" data-aos="zoom-in" data-aos-duration="1000" @click="seeIt = !seeIt">
 
-<div class="project-text-box">
+<div class="project-text-box"  :style="[seeIt ? {opacity:0.9} : null]">
 <h2 class="project-text">Actioneo VueJs</h2>
 <button>Learn more</button>
 </div>
@@ -13,17 +13,17 @@
 
 
 
-<div class="project2" data-aos="zoom-in" data-aos-duration="1000" >
+<div class="project2" data-aos="zoom-in" data-aos-duration="1000" @click="seeIt1 = !seeIt1">
  
-<div class="project-text-box">
+<div class="project-text-box" :style="[seeIt1 ? {opacity:0.9} : null]">
 <h2 class="project-text">Weather App API VueJs</h2>
 <button>Learn more</button>
 </div>
 
 
     </div>
- <div class="project3" data-aos="zoom-in" data-aos-duration="1000" >
-<div class="project-text-box">
+ <div class="project3" data-aos="zoom-in" data-aos-duration="1000" @click="seeIt2 = !seeIt2">
+<div class="project-text-box" :style="[seeIt2 ? {opacity:0.9} : null]">
 <h2 class="project-text">Fruits API VueJs</h2>
 <button @click="gitGo2">Learn more</button>
 </div>
@@ -38,9 +38,24 @@ export default {
 data() {
     return {
         modalShow: false,
+        seeIt: false, 
+        seeIt1: false, 
+        seeIt2: false
     }
 }, 
 methods: {
+
+visible(){
+ this.seeIt = true; 
+},
+visible1(){
+ this.seeIt1 = true; 
+},
+visible2(){
+ this.seeIt2 = true; 
+},
+
+
   gitGo1() {
     window.location.href = 'https://github.com/Nikoletta31';
   }, 
