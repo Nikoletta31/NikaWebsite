@@ -7,7 +7,7 @@
 
 <div class="project-text-box"  :style="[seeIt ? {opacity:0.9} : null]">
 <h2 class="project-text">Actioneo VueJs</h2>
-<button>Learn more</button>
+<button @click="visible">Learn more</button>
 </div>
     </div>
 
@@ -17,7 +17,7 @@
  
 <div class="project-text-box" :style="[seeIt1 ? {opacity:0.9} : null]">
 <h2 class="project-text">Weather App API VueJs</h2>
-<button>Learn more</button>
+<button @click="gitGo3">Learn more</button>
 </div>
 
 
@@ -28,13 +28,17 @@
 <button @click="gitGo2">Learn more</button>
 </div>
     </div>
+
   </div>
 
 </template>
 
 <script>
+
+
 export default {
   name: "Projects",
+ 
 data() {
     return {
         modalShow: false,
@@ -46,7 +50,7 @@ data() {
 methods: {
 
 visible(){
- this.seeIt = true; 
+ this.$router.push('Actioneo')
 },
 visible1(){
  this.seeIt1 = true; 
@@ -63,7 +67,7 @@ visible2(){
     window.location.href = 'https://github.com/Nikoletta31/API-VueJs';
   }, 
     gitGo3() {
-    window.location.href = 'https://github.com/Nikoletta31/nikakharebava';
+    window.location.href = 'https://github.com/Nikoletta31/Weather-App-VueJs';
   },
 
 

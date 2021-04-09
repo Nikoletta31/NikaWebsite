@@ -1,0 +1,127 @@
+@import "@/assets/styles/media.scss";
+
+.project-body {
+    background-color:white;
+     height:1450px;
+     @include mobile{
+        height:1850px;
+      
+      }
+      @include mobile-small{
+        height:1850px;
+      
+      }
+   }
+
+   .project{
+      
+       padding:50px 400px;
+       @include mobile{
+        padding:30px 20px;
+    }
+    @include mobile-small{
+        padding:30px 20px;
+    }
+     
+       h1{
+           padding-bottom:20px;
+           color:rgb(236, 108, 33);
+           @include mobile-small{
+            font-size:30px;
+        }
+       }
+  
+
+
+   }
+
+
+.container-project{
+    display:flex; 
+ 
+    padding:100px 70px;
+    justify-content: space-between;
+    background-color: rgb(65, 65, 65);
+    p{
+        color:white;
+        text-align:left;
+        padding:90px 60px;
+        @include mobile{
+           padding:50px 30px 20px 30px;
+        }
+        @include mobile-small{
+            padding:50px 30px 20px 30px;
+         }
+    }
+    img {
+        width:600px;
+        border-radius:50px;
+        border:3px solid white;
+        box-shadow: 5px 10px 25px rgb(34, 34, 34);
+        @include mobile{
+            width:330px;
+            border-radius:20px;
+        }
+        @include mobile-small{
+            width:280px;
+            border-radius:20px;
+        }
+    }
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+        padding:50px 20px;
+    }
+    @include mobile-small{
+        flex-direction: column;
+        align-items: center;
+        padding:50px 10px;
+    }
+}
+
+.container-project1{
+    display:flex; 
+     
+    padding:100px 80px;
+    justify-content: space-between;
+   
+    p{
+        color:rgb(65, 65, 65);
+        text-align:left;
+        padding:90px 80px 0 20px;
+        @include mobile{
+            padding:50px 30px 20px 30px;
+         }
+         @include mobile-small{
+            padding:50px 30px 20px 30px;
+         }
+    }
+    img {
+        width:600px;
+        border-radius:50px;
+       
+        box-shadow: 5px 10px 25px rgb(150, 150, 150);
+        @include mobile{
+            width:330px;
+            border-radius:20px;
+        }
+        @include mobile-small{
+            width:280px;
+            border-radius:20px;
+        }
+    }
+    @include mobile{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding:60px 20px 50px;
+        
+        
+    }
+    @include mobile-small{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding:60px 10px 50px;
+        
+        
+    }
+}
