@@ -77,6 +77,12 @@
     @include project; 
  }
 
+ .project4{
+    background-image: url(~@/assets/easybanking.png);
+    @include project; 
+ }
+
+
 .project-text-box{
 position:absolute;
 background-color:white;

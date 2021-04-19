@@ -3,7 +3,8 @@
 
 .section1 {
     display:flex; 
-    justify-content: space-between;
+    justify-content: center;
+    margin-top:50px;
     @include mobile {
         display:flex;
         align-items: center;
@@ -24,6 +25,7 @@
         align-items: center;
         justify-content: space-between;
     }
+
 }
 
 
@@ -35,7 +37,7 @@
     box-shadow: 5px 10px 25px #f17f49;
     border-radius: 50px;
     width: 700px;
-    margin-left:80px;
+    margin-right:40px;
     margin-top:50px;
     @include mobile {
         margin:0;
@@ -55,6 +57,14 @@
      height:500px;
      padding:60px 0 100px 80px;
     }
+    @include big-screen{
+        margin-right:200px;
+        width:950px;
+        height:950px;
+        padding:250px 0 0 120px;
+        border-radius: 80px;
+        
+    }
     
 
 
@@ -67,6 +77,9 @@
         @include mobile-small {
             font-size: 45px;
         }
+        @include big-screen{
+        font-size:120px;
+        }
     
     }
     h2 {
@@ -77,6 +90,9 @@
         }
         @include mobile-small {
             font-size: 45px;
+        }
+        @include big-screen{
+        font-size:110px;
         }
      
         span {
@@ -105,6 +121,7 @@
     box-shadow: 5px 10px 25px #f17f49;
     border-radius: 50px;
     width: 500px;
+   
   margin-top: 20px;
   @include mobile {
       width:330px;
@@ -122,23 +139,30 @@
     padding:50px 40px 20px 40px;
 }
 @include tablet {
-       width:600px; 
-     
+       width:600px;  
 }  
+@include big-screen{
+    width:700px;
+    height:400px;
+}
 
 }
 
 .info-section1 {
-    margin-right:80px;
+    margin-left:40px;
     margin-top:60px;
     @include mobile {
         margin:50px 0;
+       
     }
     @include mobile-small {
         margin:50px 0;
     }
     @include tablet {
         margin-right: 0px;
+    }
+    @include big-screen{
+        margin-top: 100px;
     }
 }
 
@@ -159,13 +183,17 @@ img {
         border: 4px solid white;
         margin:0;
     }
-
+@include big-screen{
+    width:350px;
+}
 }
 
 p {
     font-weight:500;
     font: size 18px;
-  
+  @include big-screen{
+      font-size:22px;
+  }
 }
 
 .call {
@@ -191,6 +219,9 @@ p {
             height:60px;
             padding-top:12px;
             margin:5px;
+        }
+        @include big-screen{
+            margin:20px;
         }
     
         &:hover{

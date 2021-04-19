@@ -22,6 +22,15 @@
 
 
     </div>
+
+    <div class="project4" data-aos="zoom-in" data-aos-duration="1000" @click="seeIt1 = !seeIt1">
+<div class="project-text-box" :style="[seeIt1 ? {opacity:0.9} : null]">
+<h2 class="project-text">Easybanking VueJs/NuxtJs</h2>
+<button @click="gitGo4">Learn more</button>
+</div>
+    </div>
+
+
  <div class="project3" data-aos="zoom-in" data-aos-duration="1000" @click="seeIt2 = !seeIt2">
 <div class="project-text-box" :style="[seeIt2 ? {opacity:0.9} : null]">
 <h2 class="project-text">Fruits API VueJs</h2>
@@ -68,6 +77,9 @@ visible2(){
   }, 
     gitGo3() {
     window.location.href = 'https://github.com/Nikoletta31/Weather-App-VueJs';
+  },
+    gitGo4() {
+    window.location.href = 'https://github.com/Nikoletta31/Easybanking-NuxtJs';
   },
 
 

@@ -2,11 +2,14 @@
     @media (min-width: 300px) and (max-width: 374px) { @content };
   }
 
-
 @mixin mobile {
     @media (min-width: 375px) and (max-width: 759px) { @content };
   } 
 
   @mixin tablet {
     @media (min-width: 760px) and (max-width: 1025px) { @content };
+  }  
+
+  @mixin big-screen {
+    @media (min-width: 2000px) and (max-width: 2600px) { @content };
   }  
